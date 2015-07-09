@@ -11,8 +11,6 @@ import com.coolweather.model.Province;
 import com.coolweather.util.HttpCallbackListener;
 import com.coolweather.util.HttpUtil;
 import com.coolweather.util.Utility;
-
-import android.R.anim;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -22,7 +20,6 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -92,7 +89,7 @@ public class ChooseAreaActivity extends Activity {
 			}
 			
 		});
-		queryProvinces();
+		queryProvinces();//第一次运行存入province
 	}
 	/*
 	 * 查询全国所有的省，优先从数据库查询，如果没有再到服务器上查询
